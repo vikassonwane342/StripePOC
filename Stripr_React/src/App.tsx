@@ -1,0 +1,19 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Checkout from "./pages/Checkout";
+import Failure from "./pages/Failure";
+import Success from "./pages/Success";
+
+function App() {
+ 
+  return (
+     <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Checkout />} />
+        <Route path="/success" element={<Success />} />
+        <Route path="/failure" element={<Failure />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App
